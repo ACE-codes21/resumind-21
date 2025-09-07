@@ -1,7 +1,6 @@
 
 # Smart Resume Analyzer (resumind)
 
-![hero image](readme/hero.webp)
 
 A lightweight, privacy-first web app that analyzes uploaded PDF resumes, extracts text and images, runs simple ATS-readiness checks, and surfaces an easy-to-understand report with visual score badges and suggestions.
 
@@ -144,18 +143,4 @@ Note: these are inferred from usage in `app/lib/puter.ts`. Check runtime provide
 - PDF rendering fails: confirm `public/pdf.worker.min.mjs` exists and is served at the correct path.
 - Missing runtime (Puter): If you intend to run the app without `window.puter`, stub the API in the browser for local development, e.g. a small script that attaches a minimal `window.puter` implementation that fulfills `fs` and `ai` primitives.
 
-## Contributing & next steps
-
-- Add a LICENSE (e.g., MIT) if you want an explicit project license.
-- Add automated tests and a CI workflow to run `npm run typecheck` and a linter.
-- Add example host/runtime for `window.puter` to ease local dev without the full backend.
-
----
-
-If you'd like, I can:
-
-- Add the hero screenshot inline as a larger image and include alt text.
-- Create a minimal `window.puter` dev shim and a short example script in `dev/` so contributors can run the app without an external runtime.
-- Produce a CONTRIBUTING.md and MIT LICENSE.
-
-Tell me which you'd like next and I'll implement it.
+THANKYOU!
